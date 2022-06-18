@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+body{ background-image: url('pic1.webp');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.form{background-color: rgba(29, 45, 59, 0.653); 
+color:white;
+    margin:30px 40px 0px 50px;
+    padding:30px;
+    width:400px;
+    height: 450px;
+    border:1px solid rgb(36, 36, 47);
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Breast cancer Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Go Somewhere <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Go Somewhere <span class="sr-only">(current)</span></a>
+            </li> <li class="nav-item active">
+              <a class="nav-link" href="#"> Go Somewhere <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="form">
+      <form action="/predict"method="POST">
+        <p>Enter First input Range:</p>
+        <input required name="f1">
+        <p>Enter Second input</p>
+        <input required name="f2">
+        <p>Enter Third input</p>
+        <input required name="f3">
+        <p>Enter Fourth input</p>
+        <input required name="f4">
+        <p>Enter Fifth value </p>
+       <input required name="f5">
+       <p style="margin-top:10px;"><button>submit</button></p>
+        </form>
+        </div>
+</body>
+</html>
